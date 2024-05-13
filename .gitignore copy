@@ -7,7 +7,12 @@ Thumbs.db
 *.class
 *.tgz
 **/.ionide
-
+*.env
+*.gitconfig
+*config
+*.vscode
+*.git
+*.docker
 /manifests
 /containers-readmes
 /container-features
