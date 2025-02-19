@@ -28,8 +28,8 @@
 				"chrisdias.vscode-opennewinstance",
 				"bobmagicii.dashyeah",
 				"kruemelkatze.vscode-dashboard",
-				"github.vscode-github-actions"
-				    "bobmagicii.dashyeah",
+				"github.vscode-github-actions",
+				"bobmagicii.dashyeah",
 				"Memphis335.ajax-snippets",
 				"vscode-icons-team.vscode-icons",
 				"folke.vscode-monorepo-workspace",
@@ -108,8 +108,12 @@
 				"ms-vscode.wordcount",
 				"docsmsft.docs-visual-areas",
 				"ms-toolsai.datawrangler",
-				"microsoft-IsvExpTools.powerplatform-vscode"
-		
+				"microsoft-IsvExpTools.powerplatform-vscode",
+				"ms-dotnettools.vscodeintellicode-csharp",
+				"amazonwebservices.amazon-q-vscode",
+				"ms-azuretools.vscode-azurefunctions",
+				"ms-azuretools.vscode-azureresourcegroups",
+				"ms-dotnettools.csdevkit"
 			]
 		}
 	},
@@ -129,6 +133,7 @@
 	"features": {
 		"docker-in-docker": "latest",
 		"github-cli": "latest"
+		"docker pull ghcr.io/officialmofabs/custom-ssh-server:latest"
 	},
 	"overrideCommand": false,
 	"hostRequirements": {

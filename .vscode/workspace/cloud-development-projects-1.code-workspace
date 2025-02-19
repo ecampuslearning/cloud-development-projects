@@ -1,7 +1,42 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"path": "./media/ubuntu/btrfs/officialmofabs/officialmofabs-io/cloud-development-projects/.vscode/workspace/cloud-development-projects-1.code-workspace."
 		}
 	]
+],
+"settings": {
+	"workbench.colorCustomizations": {},
+	"git.ignoreLimitWarning": true,
+	"editor.inlineSuggest.suppressSuggestions": true,
+	"editor.inlineSuggest.syntaxHighlightingEnabled": true,
+	"editor.suggest.localityBonus": true,
+	"editor.suggest.preview": true,
+	"editor.suggest.shareSuggestSelections": true,
+	"editor.suggest.showStatusBar": true,
+	"editor.suggest.snippetsPreventQuickSuggestions": true,
+	"files.autoGuessEncoding": true,
+	"files.autoSaveWhenNoErrors": true,
+	"files.autoSaveWorkspaceFilesOnly": true,
+	"workbench.view.alwaysShowHeaderActions": true,
+	"workbench.view.showQuietly": {
+		"workbench.panel.output": true
+	},
+	"scm.alwaysShowActions": true,
+	"scm.alwaysShowRepositories": true,
+	"extensions.closeExtensionDetailsOnViewChange": true,
+	"terminal.integrated.allowMnemonics": true,
+	"terminal.integrated.copyOnSelection": true,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.enableImages": true,
+	"remote.localPortHost": "allInterfaces",
+	"remote.downloadExtensionsLocally": true,
+	"notebook.experimental.remoteSave": true,
+	"notebook.formatOnCellExecution": true,
+	"notebook.formatOnSave.enabled": true,
+	"notebook.multiCursor.enabled": true,
+	"notebook.outline.showCodeCells": true,
+	"notebook.variablesView": true,
+	"interactiveWindow.promptToSaveOnClose": true
+}
 }
