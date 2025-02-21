@@ -1,0 +1,1 @@
+0 0 * * * rsync -a /var/www /backup

@@ -113,7 +113,9 @@
 				"amazonwebservices.amazon-q-vscode",
 				"ms-azuretools.vscode-azurefunctions",
 				"ms-azuretools.vscode-azureresourcegroups",
-				"ms-dotnettools.csdevkit"
+				"ms-dotnettools.csdevkit",
+				"HashiCorp.HCL",
+				"coder.coder-remote"
 			]
 		}
 	},

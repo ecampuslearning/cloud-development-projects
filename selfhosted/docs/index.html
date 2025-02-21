@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haxxnet Compose Viewer</title>
+    <link rel="shortcut icon" href="data:image/x-icon;base64,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" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous">
+    <!-- Dark Mode CSS -->
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+        }
+
+        .project-tile {
+            border: 1px solid #555;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            background-color: #2d2c2c;
+            cursor: pointer;
+        }
+
+        .project-tile img {
+            max-width: 50px;
+            max-height: 50px;
+            margin-bottom: 10px;
+        }
+
+        #searchBar {
+            width: 310px;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        #repoContent .project-tile {
+            width: 20%; /* Set width to 20% for 5 tiles in a row by default */
+        }
+
+        /* Responsive adjustment for small screens */
+        @media (max-width: 576px) {
+            #repoContent .project-tile {
+                width: 40%; /* Set width to 45% for 2 tiles in a row on small screens */
+            }
+        }
+    </style>
+</head>
+
+<body class="container mt-5">
+    <div class="container">
+        <a target="_blank" href="https://github.com/Haxxnet/Compose-Examples" class="d-flex justify-content-center">
+            <img width="80px" src="https://avatars.githubusercontent.com/u/98923398?s=200&v=4" alt="Haxxnet Avatar">
+        </a><br>
+        <div align="center" width="100%">
+            <h1>Awesome Docker Compose Examples</h1>
+            <p>Various Docker Compose examples of selfhosted FOSS and proprietary projects.</p>
+            <img src="https://img.shields.io/github/stars/Haxxnet/Compose-Examples.svg?style=social&label=Star" /> |
+            <img src="https://img.shields.io/github/forks/Haxxnet/Compose-Examples.svg?style=social&label=Fork" /> |
+            <img src="https://img.shields.io/github/watchers/Haxxnet/Compose-Examples.svg?style=social&label=Watch" /><p>
+            <img src="https://img.shields.io/github/directory-file-count/Haxxnet/Compose-Examples/examples?label=Compose%20Examples&style=for-the-badge.svg&color=blue" />
+            <img src="https://img.shields.io/badge/maintainer-LRVT-red" /><p>
+        </div>
+        <div class="text-center mt-3">
+            <button class="btn btn-primary" onclick="randomProject()">Random Project</button>
+            <button class="btn btn-danger" onclick="clearAndReload()">Clear Search</button>
+        </div>
+        <div id="searchBar" class="text-center">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search by project name...">
+        </div>
+        <div id="repoContent" class="row justify-content-center"></div>
+
+    </div>
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4D8N/Img==" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        var apiUrl = 'https://api.github.com/repos/Haxxnet/Compose-Examples/contents/examples';
+        var data; // Define the data variable globally
+        var dockericon = 'https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png';
+
+        function clearAndReload() {
+            // Clear the search input field
+            document.getElementById('searchInput').value = '';
+
+            // Reload all tiles (assuming loadProjects() is your initial load function)
+            loadProjects();
+        }
+
+        function loadProjects() {
+            $.get(apiUrl, function (data) {
+                data.forEach(function (project) {
+                    if (project.type === 'dir') {
+                        var projectName = project.name;
+                        var imageUrl = `https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/${projectName}.png`;
+
+                        var projectTile = $('<div class="col-md-2 project-tile">' +
+                            '<img src="' + imageUrl + '" onerror="this.src=\'' + dockericon + '\'" alt="Icon">' +
+                            '<h5>' + project.name + '</h5>' +
+                            '</div>');
+
+                        projectTile.on('click', function () {
+                            window.open(project.html_url, '_blank');
+                        });
+
+                        $('#repoContent').append(projectTile);
+                    }
+                });
+            });
+        }
+
+    // Initial load
+    $.get(apiUrl, function (responseData) {
+        data = responseData;
+        loadProjects(); // Call the function to load projects after data is available
+    });
+
+    // Search functionality
+    $('#searchInput').on('input', function () {
+        var searchTerm = $(this).val().toLowerCase();
+        // Clear existing content
+        $('#repoContent').empty();
+        // Reload projects based on the search term
+        data.forEach(function (project) {
+            if (project.type === 'dir' && project.name.toLowerCase().includes(searchTerm)) {
+                var projectName = project.name;
+                        var imageUrl = `https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/${projectName}.png`;
+
+                        var projectTile = $('<div class="col-md-2 project-tile">' +
+                            '<img src="' + imageUrl + '" onerror="this.src=\'' + dockericon + '\'" alt="Icon">' +
+                            '<h5>' + project.name + '</h5>' +
+                            '</div>');
+                projectTile.on('click', function () {
+                    window.open(project.html_url, '_blank');
+                });
+                $('#repoContent').append(projectTile);
+            }
+        });
+    });
+
+
+    // Function to select a random project name and fill the search input
+    function randomProject() {
+        // Get a random project index
+        var randomIndex = Math.floor(Math.random() * data.length);
+        var randomProject = data[randomIndex];
+        
+        // Fill the search input with the random project name
+        $('#searchInput').val(randomProject.name);
+
+        // Trigger the input event to initiate the search
+        $('#searchInput').trigger('input');
+    }
+
+
+    </script>
+</body>
+</html>
