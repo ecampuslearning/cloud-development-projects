@@ -115,7 +115,12 @@
 				"ms-azuretools.vscode-azureresourcegroups",
 				"ms-dotnettools.csdevkit",
 				"HashiCorp.HCL",
-				"coder.coder-remote"
+				"coder.coder-remote",
+				"c0der-himel.vscode-wev-dev-extension-pack",
+				"eliostruyf.vscode-front-matter-beta",
+				"loiane.frontend-extension-pack",
+				"fabiospampinato.vscode-github-notifications-bell",
+				"SimonSiefke.ddev"
 			]
 		}
 	},
