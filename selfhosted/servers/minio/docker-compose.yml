@@ -1,7 +1,7 @@
 services:
 
   minio-s3:
-    image: bitnami/minio:2024
+    image: soldevelo/minio:2024.12
     container_name: minio
     hostname: minio
     environment:
